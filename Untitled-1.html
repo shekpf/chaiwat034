@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+  <!-- ===== แกลเลอรี ===== -->
+<section id="gallery" class="container">
+<h2 style="margin-top:0; font-size:28px">แกลเลอรี</h2>
+<p class="muted" style="margin-bottom:18px">วางภาพผลงานหรือสินค้าได้ตามต้องการ (ตอนนี้เป็น placeholder)</p>
+<div class="gallery">
+<img src="https://picsum.photos/seed/a/600/400" alt="ภาพตัวอย่าง 1" loading="lazy">
+<img src="https://picsum.photos/seed/b/600/400" alt="ภาพตัวอย่าง 2" loading="lazy">
+<img src="https://picsum.photos/seed/c/600/400" alt="ภาพตัวอย่าง 3" loading="lazy">
+<img src="https://picsum.photos/seed/d/600/400" alt="ภาพตัวอย่าง 4" loading="lazy">
+<img src="https://picsum.photos/seed/e/600/400" alt="ภาพตัวอย่าง 5" loading="lazy">
+<img src="https://picsum.photos/seed/f/600/400" alt="ภาพตัวอย่าง 6" loading="lazy">
+</div>
+</section>
+    <!-- ===== แบบฟอร์มติดต่อ ===== -->
+     <button class="hamburger" id="btnMenu" aria-label="เปิดเมนู">☰ เมนู</button>
+      <div class="menu" id="menu">
+             <section id="contact" class="container">
+<h2 style="margin-top:0; font-size:28px">ติดต่อเรา</h2>
+  <p class="muted" style="margin-bottom:18px">กรอกข้อมูลเพื่อให้เราติดต่อกลับ</p>
+    <form onsubmit="event.preventDefault(); alert('ส่งข้อความเรียบร้อย!'); this.reset();">
+<div class="form-row">
+<div>
+   <label for="name">ชื่อ</label>
+    <input id="name" name="name" placeholder="ชื่อของคุณ" required />
+</div>
+<div>
+   <label for="email">อีเมล</label>
+  <input id="email" name="email" type="email" placeholder="name@example.com" required />
+</div>
+</div>
+<div>
+   <label for="topic">หัวข้อ</label>
+  <input id="topic" name="topic" placeholder="เรื่องที่ต้องการติดต่อ" />
+</div>
+<div>
+  <label for="message">ข้อความ</label>
+  <textarea id="message" name="message" placeholder="รายละเอียดเพิ่มเติม..."></textarea>
+</div>
+<button class="btn primary submit" type="submit">ส่งข้อความ</button>
+</form>
+</section>
+
+
+<footer>
+<div class="container">© <span id="year"></span> MySite — สร้างด้วย HTML + CSS</div>
+</footer>
+
+
+<script>
+// ปุ่มเมนูมือถือ
+const btnMenu = document.getElementById('btnMenu');
+const menu = document.getElementById('menu');
+btnMenu?.addEventListener('click', ()=> menu.classList.toggle('open'));
+
+
+// ปีปัจจุบัน
+document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+</body>
+</html>

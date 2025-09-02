@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>วิชาดาราศาสตร์</title>
+    <link rel="stylesheet" href="css/m2.css">
+    </head>
+    <body>
+    <header class="box2">
+        <div class="box3">
+        <a href="https://www.youtube.com" class="logo">
+            <img src="แม่สายนะ/bo.png" alt="โลโก้" class="box6">
+            <nav class="box6">
+                <ul class="box8">
+                    <li><a href="oc.html" class="gg">หน้ัา1</a></li>
+                    <li><a href="oc2.html" class="gg">หน้า2</a></li>
+                    <li><a href="sohk5.html" class="gg">login</a></li>
+                    <li><a href="chawat.html" class="gg">หน้า3</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    </body>
+  <style>
+    body {
+      background-color: #5fb2d8;
+  box-shadow: 0 2px 4px rgba(226, 161, 161, 0.1);  /* เงาเล็กน้อยที่ด้านล่างของ header */
+  padding: 0.5rem rem; /* ปรับ padding */
+  position: sticky; /* ทำให้ header อยู่ด้านบนสุดเมื่อเลื่อนจอ */
+  top: 0; /* ตำแหน่งอยู่ที่ด้านบนสุด */
+  z-index: 1000;  /* ทำให้ header อยู่เหนือเนื้อหาอื่น ๆ */
+  border-style: solid; /* กำหนดเส้นขอบ */
+  border-radius: 10px; /* ทำให้มุมโค้งมน */
+}
+
+    header {
+      text-align: center;
+      padding: 50px 20px;
+      background-color: rgba(136, 255, 112, 0.6);
+    }
+
+    h1 {
+      font-size: 3em;
+      margin: 0;
+    }
+
+    section {
+      max-width: 800px;
+      margin: 50px auto;
+      padding: 20px;
+      background-color: rgba(83, 83, 248, 0.6);
+      border-radius: 15px;
+      box-shadow: 0 0 20px rgba(102, 0, 0, 0.5);
+    }
+
+    p {
+      font-size: 1.2em;
+      line-height: 1.6;
+    }
+
+    .timeline {
+      margin-top: 30px;
+    }
+
+    .event {
+      background-color: rgba(255, 255, 255, 0.1);
+      margin: 15px 0;
+      padding: 15px;
+      border-left: 5px solid #00f;
+      border-radius: 5px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>การเกิดของโลก</h1>
+  </header>
+
+  <section>
+    <p>โลกเกิดขึ้นประมาณ 4.54 พันล้านปีก่อน จากการรวมตัวของฝุ่นและก๊าซในดิสก์กาแล็กซี่บริเวณระบบสุริยะตอนต้น การสะสมและชนกันของวัตถุเล็ก ๆ ทำให้เกิดโลกในที่สุด</p>
+    
+    <div class="timeline">
+      <div class="event">
+        <strong>4.6 พันล้านปีก่อน:</strong> ก๊าซและฝุ่นรวมตัวเป็นดิสก์รอบดวงอาทิตย์
+      </div>
+      <div class="event">
+        <strong>4.5 พันล้านปีก่อน:</strong> การชนกันของดาวเคราะห์น้อยสร้างโลกและดวงจันทร์
+      </div>
+      <div class="event">
+        <strong>4.0 พันล้านปีก่อน:</strong> โลกเริ่มเย็นตัวและเกิดเปลือกโลก
+      </div>
+      <div class="event">
+        <strong>3.5 พันล้านปีก่อน:</strong> น้ำเริ่มสะสมบนพื้นผิวโลกและเริ่มมีชีวิตเกิดขึ้น
+      </div>
+    </div>
+  </section>
+
+  <script>
+    // ตัวอย่าง Animation เบา ๆ
+    const events = document.querySelectorAll('.event');
+    events.forEach((e, index) => {
+      e.style.opacity = 0;
+      setTimeout(() => {
+        e.style.transition = 'opacity 1s';
+        e.style.opacity = 1;
+      }, index * 500);
+    });
+  </script>
+</body>
+</html>
